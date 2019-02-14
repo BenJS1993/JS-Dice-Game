@@ -1,1 +1,59 @@
+/* html {
+    overflow-y: hidden;
+} */
 
+body {
+    background-image: linear-gradient(to right, red , blue);
+    font-family: 'Coiny', cursive;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: auto;
+    padding: auto;
+}
+
+ol {
+    display: block;
+    list-style-type: decimal;
+    text-align: justify;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.player {
+    font-size: 15px;
+    line-height: 0.3;
+    justify-items: center;
+}
+
+.dice {
+    display: none;
+}
+
+button {
+    display: block;
+    margin-left: 625px;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {
+    background-color: purple;
+}
+
+button:active {
+    background-color: blue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
