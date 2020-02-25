@@ -1,9 +1,11 @@
-/* html {
-    overflow-y: hidden;
-} */
+html, body {
+    height: 100%;
+}
 
 body {
-    background-image: linear-gradient(to right, red , blue);
+    background: #0099F7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F11712, #0099F7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F11712, #0099F7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Coiny', cursive;
     text-align: center;
 }
@@ -15,12 +17,19 @@ h1 {
     padding: auto;
 }
 
-ol {
+h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: auto;
+    padding: auto;
+}
+
+p {
     display: block;
     list-style-type: decimal;
-    text-align: justify;
+    text-align: center;
     text-transform: capitalize;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .player {
@@ -33,13 +42,14 @@ ol {
     display: none;
 }
 
-button {
-    display: block;
-    margin-left: 625px;
+.button {
+    display: flex;
+    margin: auto;
+    width: 11%;
     padding: 15px 25px;
     font-size: 24px;
     cursor: pointer;
-    text-align: center;
+    justify-self: center;
     outline: none;
     color: white;
     background-color: crimson;
