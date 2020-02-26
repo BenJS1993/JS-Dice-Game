@@ -41,7 +41,7 @@ function rollDice() {
         scoreTotal = 0;
 
     } else if (scoreTotal == 0) {
-        document.getElementById("loser").innerHTML = "You lost, try again"
+        document.getElementById("loser").innerHTML = "You lost, try again";
 
     } else {
         document.getElementById("winner").innerHTML = "";
