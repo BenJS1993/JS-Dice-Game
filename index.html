@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <style>@import url('https://fonts.googleapis.com/css?family=Coiny');</style>
-    <title>JS Dice Game Challenge</title>
-</head>
-<body>
-    <h1>The Dice Game</h1>
-        <h2>How to play</h2>
-            <p>1. Roll the dice to begin the game</p>
-            <p>2. The dice will appear on the first roll</p>
-            <p>3. The score will add up on every roll you make</p>
-            <p>4. If the score surpasses 20, you win the game</p>
-            <p>5. However, if you roll a 1 at any point within the game, you lose and the game will restart</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+        <style>@import url('https://fonts.googleapis.com/css?family=Coiny');</style>
+        <title>JS Dice Game Challenge</title>
+    </head>
+    <body>
+        <h1>The Dice Game</h1>
+            <h2>How to play</h2>
+                <p>Roll the die to begin the game</p>
+                <p>If the score surpasses 20, you win the game</p>
+                <p>However if you roll a 1 at any point within the game you lose</p>
 
         <div class="player">
-            <p>Player
-                Score:</p>
+            <p>Player Score:</p>
             <p id="scoretotal"></p>
-            <p id="showdice"></p>
-            <img id="diceimage" />
+            <!-- <p id="showdice"></p> -->
+            <!-- <img id="diceimage" /> -->
             <p id="winner"></p>
             <p id="loser"></p>
         </div>
 
-    <div class="dice">
-        <img src="/img/dice1.png">
-        <img src="/img/dice2.png">
-        <img src="/img/dice3.png">
-        <img src="/img/dice4.png">
-        <img src="/img/dice5.png">
-        <img src="/img/dice6.png">
-    </div>
+        <!-- <div class="die" onclick="rollDice()"> -->
+            <img id="playerDie" src="./img/dice1.png/" onclick="rollDice()">
+            <!-- <img src="/img/dice1.png">
+            <img src="/img/dice2.png">
+            <img src="/img/dice3.png">
+            <img src="/img/dice4.png">
+            <img src="/img/dice5.png">
+            <img src="/img/dice6.png"> -->
+        <!--</div> -->
 
-    <div class="button" onclick="rollDice()">Roll the Dice</div>
+        <!-- <div class="button" onclick="rollDice()">Roll the Die</div> -->
     
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>
