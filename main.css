@@ -38,21 +38,12 @@ p {
     justify-items: center;
 }
 
-.die {
-    display: flex;
-    margin: auto;
-}
-
-.die:hover {
-    cursor: pointer;
-}
-
 #playerDie {
     display: flex;
     margin: auto;
     border-radius: 10%;
     border-style: solid;
-    border-width: 5px;
+    border-width: 10px;
 }
 
 #playerDie:hover {
@@ -74,7 +65,7 @@ p {
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-} */
+}
 
 .button:hover {
     background-color: purple;
@@ -84,4 +75,4 @@ p {
     background-color: blue;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
-}
+} */
